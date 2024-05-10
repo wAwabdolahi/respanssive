@@ -1,0 +1,235 @@
+.main{
+    margin-right: 2%;
+    margin-left: 16%;
+}
+.top-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    height: 250px;
+}
+.top-section-left{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    height: 100%;
+
+}
+.cards{
+    position: relative;
+    background-image: url(../../img/background.jpg);
+    border-radius: .5rem;
+}
+.card-icon{
+    position: absolute;
+    top: .625rem;
+    left: .625rem;
+    width: fit-content;
+    height: fit-content;
+    padding: .3125rem;
+    background-color: white;
+    border-radius: .5rem;
+}
+.card-icon i{
+    color: #576578;
+}
+.more i{
+    color: white;
+}
+.more{
+    position: absolute;
+    top: .625rem;
+    right: .625rem;
+}
+.card-about{
+    position: absolute;
+    bottom: .625rem;
+    left: .625rem;
+}
+.card-about p{
+    font-size: .625rem;
+    color: #6c788a;
+}
+.card-about p span{
+    color: white;
+}
+.top-title{
+    margin-bottom: .625rem;
+}
+.percentage-card{
+    position: absolute;
+    bottom: .625rem;
+    right: .625rem;
+    color: #6c788a;
+    font-size: .625rem;
+}
+.top-section-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .9375rem 10px;
+    background-color: white;
+    border-radius: 1rem;
+}
+.progress-title{
+    font-size: .8125rem;
+    color: #959596;
+    margin: .3125rem 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.progress-bar{
+    width: 100%;
+    height:4px;
+    border-radius: .5rem;
+    background-color: #959596;
+    
+}
+.progress-passed-positive{
+    width: 80%;
+    border: 3px solid #46C0E5;
+}
+.progress-passed-neutral{
+    width: 17%;
+    border: 3px solid #34373E;
+}
+.progress-passed-negative{
+    width: 3%;
+    border: 3px solid #B24E58;
+}
+.top-section-right-bottom{
+    margin-top: 1.875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom-left p{
+    color: #959596;
+    font-size: .9375rem;
+}
+.bottom-right button{
+    border-radius: .5rem;
+    font-size: .625rem;
+    padding: .625rem .9375rem;
+    background-color: #2A3054;
+    color: white;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+    border: none;
+}
+.bottom-right button:hover{
+    color: #2A3054;
+    background-color: #ebebeb;
+    cursor: pointer;
+}
+
+.reviews-section{
+    font-size: 10px;
+    padding: .9375rem .625rem;
+    margin-top: 2%;
+    margin-right: 20px;
+    width: 100%;
+    background-color: white;
+    border-radius: 1rem;
+    height: 100%;
+}
+
+.avatar{
+    display: flex;
+    align-items:center;
+}
+.avatar img{
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+}
+table{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    font-size: .75rem;
+    font-weight: bold;
+    border-collapse: collapse;
+}
+td{
+    border-top: 2px solid #e3dede;
+}
+table tr th{
+    padding: 0 10px;
+    padding-bottom: 10px; ;
+    color: #959596;
+}
+ table td{
+    padding: 10px;
+}
+td p span{
+    margin-right: 10px;
+}
+td p span i{
+    font-size: 7px;
+}
+.neutral i{
+    border-radius: 50%;
+    color: #34373E;
+    background-color: #34373E;
+}
+.positive i{
+    border-radius: 50%;
+    color: #6BB4AD;
+    background-color: #6BB4AD;
+}
+.negative i{
+    border-radius: 50%;
+    color: #B24E58;
+    background-color: #B24E58;
+}
+tr td small{
+    color: #6f6f73;
+}
+@media screen and (max-width: 700px){
+
+    .top-section{
+        grid-template-columns:1fr;
+        height: fit-content;
+       
+    }
+    .top-section-left{
+        grid-template-columns:1fr;
+    }
+    .cards{
+        height: 100px;
+    }
+    .reviews-section{
+        
+    }
+    table {
+        display: block;
+        width: 100%; 
+    }
+    table tbody,
+    table th,
+    table td,
+    table tr {
+        display: block;
+    }
+    table tbody tr {
+        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+    }
+    table tbody tr td {
+        display: block;
+        text-align: left;
+    }
+    .t-header{
+        border: none;
+        display: none;
+    }
+    table td{
+        border-top: none;
+    }
+
+}
